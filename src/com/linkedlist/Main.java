@@ -10,7 +10,8 @@ public class Main {
 		l.addEnd(400);
 		l.addAtPosition(3,300);
 		l.print();
-		//l.print();
+		l.deleteAtHead();
+		l.print();
 	}
 
 }
