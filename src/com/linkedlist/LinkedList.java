@@ -45,7 +45,6 @@ public class LinkedList {
 
 	public void print() {
 		Node temp = head;
-		System.out.println("Linkedlist ");
 		while (temp.next != null) {
 			System.out.print(temp.data + "-->");
 			temp = temp.next;
@@ -101,7 +100,27 @@ public class LinkedList {
 			System.out.println("No node to delete");
 		} else {
 			head = head.next;
+			System.out.println("\n" + temp.data + "is deleted");
 			temp = null;
+		}
+	}
+
+	/**
+	 * to delete last node from linkedlist
+	 */
+	public void deleteAtTail() {
+		Node temp = head;
+		Node cur = temp;
+		if (head == null) {
+			System.out.println("Deletion not possible");
+			return;
+		} else {
+			while (temp.next != null) {
+				cur = temp;
+				temp = temp.next;
+			}
+			System.out.println("\n" + temp.data + "is deleted");
+			cur.next = null;
 		}
 	}
 }
