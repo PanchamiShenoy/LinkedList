@@ -14,7 +14,7 @@ public class LinkedList {
 	}
 
 	/**
-	 * method to insert node at the end
+	 * method to insert node at the end.Uc3 inserting node at end
 	 * 
 	 * @param data
 	 * @return
@@ -55,6 +55,7 @@ public class LinkedList {
 
 	/**
 	 * method to node at head or insert node front
+	 * 
 	 * @param data
 	 */
 	public void addFront(int data) {
