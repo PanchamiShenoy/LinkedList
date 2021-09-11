@@ -63,4 +63,32 @@ public class LinkedList {
 		newNode.next = head;
 		head = newNode;
 	}
+
+	/**
+	 * to insert node at specified position
+	 * 
+	 * @param pos
+	 * @param data
+	 */
+	public void addAtPosition(int pos, int data) {
+		if (pos <= 0) {
+			System.out.println("Invalid position");
+			return;
+		} else if (pos == 1) {
+			addFront(data);
+		} else {
+			int count = 1;
+			Node newNode = new Node(data);
+			Node cur = head;
+			Node prev = null;
+			while (count < pos) {
+				prev = cur;
+				cur = cur.next;
+				count++;
+			}
+			newNode.next = cur;
+			prev.next = newNode;
+		}
+
+	}
 }
