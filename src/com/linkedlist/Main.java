@@ -5,10 +5,10 @@ public class Main {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		LinkedList l = new LinkedList();
-		l.addEnd(100);
-		l.addEnd(200);
-		l.addEnd(300);
-		l.addEnd(400);
+		l.addFront(100);
+		l.addFront(200);
+		l.addFront(300);
+		l.addFront(400);
 		l.print();
 	}
 

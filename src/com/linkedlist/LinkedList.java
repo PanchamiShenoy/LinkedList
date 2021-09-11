@@ -52,4 +52,14 @@ public class LinkedList {
 		}
 		System.out.print(temp.data + "-->null");
 	}
+
+	/**
+	 * method to node at head or insert node front
+	 * @param data
+	 */
+	public void addFront(int data) {
+		Node newNode = new Node(data);
+		newNode.next = head;
+		head = newNode;
+	}
 }
