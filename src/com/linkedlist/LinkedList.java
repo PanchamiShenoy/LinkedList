@@ -123,12 +123,20 @@ public class LinkedList {
 			cur.next = null;
 		}
 	}
+
+	/**
+	 * 
+	 * search for specific node
+	 * 
+	 * @param key
+	 * @return
+	 */
 	public Node search(int key) {
 		Node tempNode = head;
 		int count = 0;
 		while (tempNode != null) {
 			count++;
-			if (tempNode.data==key) {
+			if (tempNode.data == key) {
 				System.out.println(key + "is at " + count + "th position");
 				return tempNode;
 			}
@@ -136,5 +144,13 @@ public class LinkedList {
 
 		}
 		return null;
+	}
+
+	public void insertAfter(int key, int data) {
+		Node newNode = new Node(data);
+		Node temp = search(key);
+		Node next = temp.next;
+		temp.next = newNode;
+		newNode.next = next;
 	}
 }
