@@ -17,6 +17,8 @@ public class Main {
 		// l.print();
 		l.insertAfter(400, 450);
 		l.print();
+		l.deleteSpecified(450);
+		l.print();
 	}
 
 }
