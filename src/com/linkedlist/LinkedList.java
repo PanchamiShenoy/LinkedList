@@ -123,4 +123,18 @@ public class LinkedList {
 			cur.next = null;
 		}
 	}
+	public Node search(int key) {
+		Node tempNode = head;
+		int count = 0;
+		while (tempNode != null) {
+			count++;
+			if (tempNode.data==key) {
+				System.out.println(key + "is at " + count + "th position");
+				return tempNode;
+			}
+			tempNode = tempNode.next;
+
+		}
+		return null;
+	}
 }

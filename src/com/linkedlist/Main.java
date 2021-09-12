@@ -10,11 +10,12 @@ public class Main {
 		l.addEnd(400);
 		l.addEnd(500);
 		l.addAtPosition(3,300);
-		l.print();
-		l.deleteAtHead();
-		l.print();
-		l.deleteAtTail();
-		l.print();
+		//l.print();
+		//l.deleteAtHead();
+		//l.print();
+		//l.deleteAtTail();
+		//l.print();
+		l.search(400);
 	}
 
 }
