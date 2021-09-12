@@ -9,13 +9,14 @@ public class Main {
 		l.addEnd(200);
 		l.addEnd(400);
 		l.addEnd(500);
-		l.addAtPosition(3,300);
-		//l.print();
-		//l.deleteAtHead();
-		//l.print();
-		//l.deleteAtTail();
-		//l.print();
-		l.search(400);
+		l.addAtPosition(3, 300);
+		// l.print();
+		// l.deleteAtHead();
+		// l.print();
+		// l.deleteAtTail();
+		// l.print();
+		l.insertAfter(400, 450);
+		l.print();
 	}
 
 }
