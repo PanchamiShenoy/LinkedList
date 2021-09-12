@@ -49,7 +49,7 @@ public class LinkedList {
 			System.out.print(temp.data + "-->");
 			temp = temp.next;
 		}
-		System.out.print(temp.data + "-->null");
+		System.out.print(temp.data + "-->null\n");
 	}
 
 	/**
@@ -146,6 +146,29 @@ public class LinkedList {
 		return null;
 	}
 
+	/**
+	 * delete the node specified by the key data
+	 * 
+	 * @param data
+	 */
+	public void deleteSpecified(int data) {
+
+		Node curNode = head;
+		Node prevNode = null;
+
+		while (curNode != null && curNode.data != data) {
+			prevNode = curNode;
+			curNode = curNode.next;
+		}
+		prevNode.next = curNode.next;
+	}
+
+	/**
+	 * method to add node after specified node
+	 * 
+	 * @param key
+	 * @param data
+	 */
 	public void insertAfter(int key, int data) {
 		Node newNode = new Node(data);
 		Node temp = search(key);
