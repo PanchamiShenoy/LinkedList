@@ -10,15 +10,18 @@ public class Main {
 		l.addEnd(400);
 		l.addEnd(500);
 		l.addAtPosition(3, 300);
-		// l.print();
-		// l.deleteAtHead();
-		// l.print();
-		// l.deleteAtTail();
-		// l.print();
 		l.insertAfter(400, 450);
 		l.print();
 		l.deleteSpecified(450);
 		l.print();
+
+		SortedList sl = new SortedList();
+		System.out.println("\nOrdered Linked List");
+		sl.add(50);
+		sl.add(20);
+		sl.add(80);
+		sl.add(30);
+		sl.print();
 	}
 
 }
